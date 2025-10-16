@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>XiP — Home</title>
+<link rel="icon" href="favicon.ico" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <button class="menu-icon" aria-label="Open menu" id="menuBtn"><span></span><span></span></button>
+    <a href="index.html" id="brand">XiP</a>
+    <label class="theme-toggle" title="Toggle theme">
+      <input id="themeToggle" type="checkbox" aria-label="Toggle dark mode">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <nav id="sidebar" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="sidebar-footer">© <span id="year"></span> XiP</div>
+  </nav>
+
+  <div id="overlay" tabindex="-1"></div>
+
+  <main class="container">
+    <section class="hero">
+      <h1 class="title">Hi — I’m Akash (Rustylad)</h1>
+      <p class="lead">I build tools, bots, and systems that make tech feel like magic. Open-source by default. Practical by design.</p>
+      <div class="hero-cta">
+        <a class="btn" href="projects.html">See projects</a>
+        <a class="btn outline" href="about.html">About XiP</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <article class="card">
+        <h3>Open Tools</h3>
+        <p>Small, composable tools for automation & learning. Termux-ready, cross-platform.</p>
+      </article>
+      <article class="card">
+        <h3>Live Projects</h3>
+        <p>Projects list loads dynamically and shows live GitHub stats when available.</p>
+      </article>
+      <article class="card">
+        <h3>Ethical Focus</h3>
+        <p>OSINT & automation with emphasis on learning, permission, and responsible use.</p>
+      </article>
+    </section>
+
+    <section class="stats-preview">
+      <div id="github-card" class="github-card">
+        <div class="gh-left">
+          <div class="avatar" id="gh-avatar"></div>
+        </div>
+        <div class="gh-right">
+          <div class="gh-name" id="gh-name">rustyladx</div>
+          <div class="gh-stats">
+            <div><strong id="gh-stars">—</strong><span>Stars</span></div>
+            <div><strong id="gh-forks">—</strong><span>Repos</span></div>
+            <div><strong id="gh-followers">—</strong><span>Followers</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="muted">GitHub stats are fetched live. Set username in <code>app.js</code>.</p>
+    </section>
+  </main>
+
+<script src="app.js"></script>
+</body>
+      </html>
