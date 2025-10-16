@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Projects | XiP</title>
+<link rel="icon" href="favicon.ico" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <button class="menu-icon" aria-label="Open menu" id="menuBtn"><span></span><span></span></button>
+    <a href="index.html" id="brand">XiP</a>
+    <label class="theme-toggle" title="Toggle theme">
+      <input id="themeToggle" type="checkbox" aria-label="Toggle dark mode">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <nav id="sidebar" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="sidebar-footer">© <span id="year"></span> XiP</div>
+  </nav>
+  <div id="overlay" tabindex="-1"></div>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>Projects</h1>
+      <p class="lead">A curated collection of tools, bots and experiments. Click an item to expand details.</p>
+    </header>
+
+    <section id="projectsGrid" class="projects-grid" aria-live="polite">
+      <!-- JS will inject project cards here from projects.json or inline data -->
+    </section>
+  </main>
+
+<script src="app.js"></script>
+</body>
+  </html>
